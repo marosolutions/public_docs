@@ -1,3 +1,6 @@
+# JETSEND API
+[API Docs](https://docs.jetsend.com/)
+
 ## Get List of Templates
 
 ### RequestURL:
@@ -71,6 +74,44 @@ GET https://app.jetsend.com/api/v1/email_templates
         "total_pages": 1,
         "total_count": 3
     }
+}
+```
+
+## Get a Template by Name
+
+### RequestURL:
+```
+GET https://app.jetsend.com/api/v1/email_template
+```
+
+### Request Header:
+```json
+{"authorization":"Bearer mysupersecretapikey", "Content-Type":"application/json"}
+```
+
+### Request Payload:
+```json
+{
+    "name": "mytemplate"
+}
+```
+
+### Response Payload:
+```json
+{
+  "id": "4c0e01c4-88c8-4142-ac6d-409e7560d533",
+  "account_id": "31ff7331-7v7d-4750-a367-0ecdf215aff6",
+  "name": "test template",
+  "subject": "Email Template",
+  "from_email": "user@example.com",
+  "from_name": "bob",
+  "reply_to": "user1@example.com",
+  "status": "draft",
+  "html": "<p>Hi {{customer_type}} \nSave big this Christmas in your area {{place}}! \nClick http://www.mysite.com and get a {{discount}}% discount\n</p><p>Hurry, this offer is only to {{user_type}}\n</p>",
+  "text": "Save big this Christmas in your area {{place}}!",
+  "headers": {},
+  "created_at": "2020-06-09T10:44:20.634-04:00",
+  "updated_at": "2020-06-01T00:19:02.137-04:00"
 }
 ```
 

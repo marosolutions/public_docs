@@ -101,7 +101,7 @@ GET https://app.jetsend.com/api/v1/email_template
 {
   "id": "4c0e01c4-88c8-4142-ac6d-409e7560d533",
   "account_id": "31ff7331-7v7d-4750-a367-0ecdf215aff6",
-  "name": "test template",
+  "name": "mytemplate",
   "subject": "Email Template",
   "from_email": "user@example.com",
   "from_name": "bob",
